@@ -1,0 +1,13 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: /home/newlearningsrujan_gmail_com/dl-projects/airbnb_object_detection/dataset/images/train
+val: /home/newlearningsrujan_gmail_com/dl-projects/airbnb_object_detection/dataset/images/valid
+test: /home/newlearningsrujan_gmail_com/dl-projects/airbnb_object_detection/dataset/images/test
+
+
+# number of classes
+nc: 30
+
+# class names
+names: ['Bathtub', 'Bed', 'Billiard table', 'Ceiling fan', 'Coffeemaker', 'Couch', 'Countertop', 'Dishwasher', 'Fireplace', 'Fountain', 
+        'Gas stove', 'Jacuzzi', 'Kitchen & dining room table', 'Microwave oven', 'Mirror', 'Oven', 'Pillow', 'Porch', 'Refrigerator', 'Shower', 
+        'Sink', 'Sofa bed', 'Stairs',  'Swimming pool', 'Television', 'Toilet', 'Towel', 'Tree house', 'Washing machine', 'Wine rack'] 
