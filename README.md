@@ -7,7 +7,7 @@ This is a an end-to-end Pytorch based Object Detection that is hosted on Flask, 
 
 
 ### Project Goal
----
+-----
 Develop an end to end machine learning product useful for businesses. 
 
 ### DATASET
