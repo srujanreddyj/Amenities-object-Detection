@@ -20,15 +20,18 @@ Python 3.8 or later with all requirements.txt dependencies installed, including 
 Downloaded images from [OPENIMAGES DATASET](https://storage.googleapis.com/openimages/web/index.html) using ```downloadIO.py```
   * Collect the data according to needed amenities from openimages dataset
   * Download the respective .csv files from openimages dataset
+  * Create a yaml file containing the location of training and validation images and class your data contains
 
 #### TRAINING 
 - - - - - - -
 ##### PREPARE DATA
+The main.py file is an executable that loads the .csv files (annotations and class id files) containing all image names and their related labels. The module munge_data converts bounding box data in csv files in .txt files as needed by YOLOv5. 
 ```
 ## download data, get the needed images ids and the bounding boxes information
 python main.py
 ```
 ##### TRAIN THE DATA
+Training done using Google Cloud platform using Tesla-P1000 GPU.
 ```
 python train.py --img 640 
                 --batch 8 
