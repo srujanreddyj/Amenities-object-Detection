@@ -9,11 +9,19 @@ This is a an end-to-end Pytorch based Object Detection that is hosted on Flask, 
 ### Project Goal
 Develop an end to end machine learning product useful for businesses. 
 
-### DATASET
+#### REQUIREMENT
+Python 3.8 or later with all requirements.txt dependencies installed, including torch>=1.6. To install run:
 
+```$ pip install -r requirements.txt```
+
+
+#### DATASET
+- - - - - - -
 Downloaded images from [OPENIMAGES DATASET](https://storage.googleapis.com/openimages/web/index.html) using ```downloadIO.py```
+1. Collect the data according to needed amenities from openimages dataset
 
-
+#### TRAINING 
+- - - - - - -
 
 
 
