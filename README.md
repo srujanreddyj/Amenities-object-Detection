@@ -72,5 +72,5 @@ python detect_flask.py
 ```
 
 
-I want to thank from botoom of my heart to the Abhisekh Thakur, Daniel Bourke, Eugene Yan and most important YOLOv5 Ultra Analytics. I learned a lot from them for through this project.
+I want to thank from botoom of my heart to the Abhisekh Thakur, Daniel Bourke, Eugene Yan and most important YOLOv5 Ultra Analytics. I learned a lot from them for this project.
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3983579.svg)](https://doi.org/10.5281/zenodo.3983579)
