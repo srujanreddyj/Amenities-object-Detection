@@ -2,15 +2,15 @@
 This is one of my favorite project. After doing pyimagesearch gurus course, I wanted something more. 
 I came across this [medium article by Airbnb](https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e). 
 
-## DESCRIPTION
+### DESCRIPTION
 This is a an end-to-end Pytorch based Object Detection that is hosted on Flask, allowing users to boot up a local web application and upload their own photos and see how many amenities are detected in their homes or photos. This project was built following needs and directions mentioned in this [Airbnb article](https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e). 
 
 
-## Project Goal
+### Project Goal
 ---
 Develop an end to end machine learning product useful for businesses. 
 
-## DATASET
+### DATASET
 
 Downloaded images from [OPENIMAGES DATASET](https://storage.googleapis.com/openimages/web/index.html) using ```downloadIO.py```
 
