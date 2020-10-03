@@ -82,6 +82,7 @@ FLASK API
 python detect_imgae.py
 ```
 If you want try the API app, download the weights from releases and this ```detect_imgae.py``` file and utils folder. Run the app locally on your machine. It looks as below.
+
 ![Webapp image]({{ site.url }}/test_images/webapp-1.png)
 
 
