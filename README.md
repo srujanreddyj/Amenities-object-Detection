@@ -87,6 +87,8 @@ If you want try the API app, download the weights from releases and this ```dete
 
 <img src="test_images/webapp-1.png">
 
+As you can see from above, the model recognizes good number of objects like swimming pool, couch, sofa bed, kitchen and dinning table but it couldn't recognize the grill. 
+
 <img src="test_images/webapp-4.png">
 
 
