@@ -79,15 +79,17 @@ Now the most important part of end-to-end machine learning. Developing an interf
 Then I wanted to develop a web App using heroku, but couldn't. The main reason being, I couldn't access the trained model weights from github releases and also when heroku install all the requirements, it exceeds the 512mb limit. So skipping it for now.
 FLASK API
 ```
+python detect_flask.py
 python detect_imgae.py
 ```
 If you want try the API app, download the weights from releases and this ```detect_imgae.py``` file and utils folder. Run the app locally on your machine. It looks as below.
 
-![Webapp image]({{ site.url }}/test_images/webapp-1.png)
 
 <img src="test_images/webapp-1.png">
 
+<img src="test_images/webapp-4.png">
 
 
-I want to thank from botoom of my heart to the Abhisekh Thakur, Daniel Bourke, Eugene Yan and most important YOLOv5 Ultra Analytics. I learned a lot from them for this project.
+
+I want to thank from bottom of my heart to the Daniel Bourke, Abhisekh Thakur, Eugene Yan and most important YOLOv5 Ultra Analytics. I learned a lot from them for this project.
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3983579.svg)](https://doi.org/10.5281/zenodo.3983579)
