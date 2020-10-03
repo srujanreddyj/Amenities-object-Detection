@@ -7,7 +7,9 @@ This is a an end-to-end Pytorch based Object Detection that is hosted on Flask, 
 
 
 ### Project Goal
-Develop an end to end machine learning product useful for businesses. 
+Develop an end to end machine learning product useful for business. 
+
+## HOW TO USE THIS REPO:
 
 #### REQUIREMENT
 Python 3.8 or later with all requirements.txt dependencies installed, including torch>=1.6. To install run:
@@ -15,12 +17,15 @@ Python 3.8 or later with all requirements.txt dependencies installed, including 
 ```$ pip install -r requirements.txt```
 
 
+
 #### DATASET
 - - - - - - -
-Downloaded images from [OPENIMAGES DATASET](https://storage.googleapis.com/openimages/web/index.html) using ```downloadIO.py```
+First decide on the number and type of amenities we want to train. 
+I decided here on 30 class amenities.
+Downloaded images from [OPENIMAGES DATASET](https://storage.googleapis.com/openimages/web/index.html) using ```downloadOIO.py```
   * Collect the data according to needed amenities from openimages dataset
   * Download the respective .csv files from openimages dataset
-  * Create a yaml file containing the location of training and validation images and class your data contains
+  * Create a yaml file containing the location of training and validation images and class of our data contains
 
 #### TRAINING 
 - - - - - - -
@@ -42,13 +47,14 @@ python train.py --img 640
                 --name yolov5x_airbnb_results 
                 --cache
 ```
-Here, I trained the model with random initialized weights and Yolo5x trained weights on COCO. The weights can be downloaded from google drive.
+After training the model with random initialized weights (which took around 30hrs), I then trained using Yolo5x trained weights on COCO. The weights can be downloaded from google drive. This transfer learning had faster training - 15hrs and also better mAP.
 
 ##### TESTING
 ```
-python test.py --weights runs/exp4_yolov5x_airbnb_results/weights/best.pt 
+python test.py --weights runs/exp5_yolov5x_airbnb_results/weights/best.pt 
                --data airbnb.yaml 
                --img 672
+               --save_txt
 ```
 
 ##### INFERENCE
@@ -69,10 +75,15 @@ python detect.py --weights runs/exp5_yolov5x_airbnb_results/weights/best.pt runs
 ```
 
 ##### WEB APP
+Now the most important part of end-to-end machine learning. Developing an interface to use this machine learning model. I develop FLASK API which can be seen below.
+Then I wanted to develop a web App using heroku, but couldn't. The main reason being, I couldn't access the trained model weights from github releases and also when heroku install all the requirements, it exceeds the 512mb limit. So skipping it for now.
 FLASK API
 ```
 python detect_imgae.py
 ```
+If you want try the API app, download the weights from releases and this ```detect_imgae.py``` file and utils folder. Run the app locally on your machine. It looks as below.
+![Webapp image]({{ site.url }}/test_images/webapp-1.png)
+
 
 
 I want to thank from botoom of my heart to the Abhisekh Thakur, Daniel Bourke, Eugene Yan and most important YOLOv5 Ultra Analytics. I learned a lot from them for this project.
