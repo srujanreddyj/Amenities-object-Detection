@@ -71,7 +71,7 @@ python detect.py --weights runs/exp5_yolov5x_airbnb_results/weights/best.pt runs
 ##### WEB APP
 FLASK API
 ```
-python detect_flask.py
+python detect_imgae.py
 ```
 
 
