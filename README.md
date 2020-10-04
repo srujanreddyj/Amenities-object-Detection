@@ -40,7 +40,7 @@ Training done using Google Cloud platform using Tesla-P1000 GPU.
 ```
 python train.py --img 640 
                 --batch 8 
-                --epochs 75 
+                --epochs 60 
                 --data data/airbnb.yaml 
                 --cfg models/yolov5x.yaml 
                 --weights '' 
