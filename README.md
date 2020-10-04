@@ -33,7 +33,7 @@ Downloaded images from [OPENIMAGES DATASET](https://storage.googleapis.com/openi
 The main.py file is an executable that loads the .csv files (annotations and class id files) containing all image names and their related labels. The module munge_data converts bounding box data in csv files in .txt files as needed by YOLOv5. 
 ```
 ## download data, get the needed images ids and the bounding boxes information
-python main.py
+python prepare.py
 ```
 ##### TRAIN THE DATA
 Training done using Google Cloud platform using Tesla-P1000 GPU.
